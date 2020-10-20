@@ -1,4 +1,4 @@
-package co.com.ceiba.daggerapplication;
+package co.com.ceiba.daggerapplication.dependencyinjection;
 
 import android.content.Context;
 
