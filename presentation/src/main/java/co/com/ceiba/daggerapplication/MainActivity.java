@@ -6,10 +6,12 @@ import android.os.Bundle;
 
 import javax.inject.Inject;
 
+import co.com.ceiba.domain.service.UserService;
+
 public class MainActivity extends AppCompatActivity {
 
     @Inject
-    UserRepository userRepository;
+    UserService userService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        boolean isCreated = userRepository.isCreated("01");
+        boolean isCreated = userService.isCreated("01");
     }
 }
